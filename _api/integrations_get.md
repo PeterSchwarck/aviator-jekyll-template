@@ -9,8 +9,8 @@ parameters:
 content_markdown: Lists all your integration’s webhook event subscriptions
 left_code_blocks:
   - code_block: curl https://next.textus.com/{your-account-name}/integrations
-    title: Path parameters
-    language: html
+    title: CURL
+    language: json
 right_code_blocks:
   - code_block: |-
       {
