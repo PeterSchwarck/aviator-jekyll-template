@@ -1,36 +1,42 @@
 ---
-title: /{your-account-name}/integrations
+title: Integrations
 position_number: 1.5
 type: get
-description: Lists all your integration’s webhook event subscriptions  
+description: Lists all your integration’s webhook event subscriptions
 parameters:
   - name:
     content:
-content_markdown: |-
-  Deletes a book in your collection.
+content_markdown: Deletes a book in your collection.
 left_code_blocks:
-  - code_block: |-
-      $.ajax({
-        "url": "https://next.textus.com/{your-account-name}/integrations",
-        "type": "GET",
-        "data": {
-          "token": "YOUR_APP_KEY"
-        },
-        "success": function(data) {
-          alert(data);
-        }
-      });
-    title: jQuery
-    language: javascript
+  - code_block: ''
+    title: Request
+    language: json
 right_code_blocks:
-  - code_block: |2-
+  - code_block: |-
       {
-        "id": 3,
-        "status": "deleted"
+        "@type": "hydra:Collection",
+        "@context": "/contexts/hydra:Collection.jsonld",
+        "id": "http://www.example.com/my_account/integrations",
+        "members": [
+          {
+            "@type": "Integration",
+            "@context": "/contexts/Integration.jsonld",
+            "id": "/integrations/0yX2VrJ",
+            "active": true,
+            "provider": "webhook",
+            "config": {
+              "baseUrl": "https://foo.bar.com/zest",
+              "webhookSecret": "textus-abcdefgh12345678",
+              "clientSecret": "[FILTERED]"
+            },
+            "settings": {}
+          }
+        ],
+        "totalItems": 1
       }
     title: Response
     language: json
-  - code_block: |2-
+  - code_block: |-
       {
         "error": true,
         "message": "Book doesn't exist"
@@ -38,4 +44,3 @@ right_code_blocks:
     title: Error
     language: json
 ---
-
