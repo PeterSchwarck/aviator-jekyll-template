@@ -3,6 +3,9 @@ title: Integrations
 position_number: 1.5
 type: get
 description: Get event subscriptions
+path parameters:
+  - name: '{your-account-name}'
+    content: 'Specifies the name of your primary non-messaging account.'
 content_markdown: Lists all your integration’s webhook event subscriptions
 left_code_blocks:
   - code_block: curl https://next.textus.com/{your-account-name}/integrations
@@ -41,8 +44,9 @@ right_code_blocks:
     title: Error
     language: json
 ---
-# Request
 
-path parameter:
-  - name: '{your-account-name}'
-    content: 'Specifies the name of your primary non-messaging account.'
+title
+: The title for the book
+
+score
+: The book's score between 0 and 5
