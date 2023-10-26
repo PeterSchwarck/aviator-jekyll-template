@@ -18,7 +18,7 @@ right_code_blocks:
         "@context": "/contexts/hydra:Collection.jsonld",
         "id": "http://www.example.com/my_account/integrations",
         "members": [
-          {z
+          {
             "@type": "Integration",
             "@context": "/contexts/Integration.jsonld",
             "id": "/integrations/0yX2VrJ",
