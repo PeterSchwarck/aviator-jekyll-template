@@ -1,9 +1,13 @@
 ---
 title: 
 position_number:
-parameters:
-  - name:
-    content:
+request:
+  -path-parameters:
+    - name:
+      content:
+  -request_body:
+    - name:
+      content:
 content_markdown:
 left_code_blocks:
   - code_block:
