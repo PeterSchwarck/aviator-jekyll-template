@@ -44,9 +44,3 @@ right_code_blocks:
     title: Error
     language: json
 ---
-
-title
-: The title for the book
-
-score
-: The book's score between 0 and 5
