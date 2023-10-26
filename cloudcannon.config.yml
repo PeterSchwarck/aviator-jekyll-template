@@ -1,0 +1,83 @@
+source: ./myblog
+paths:
+  uploads: uploads
+  dam_uploads: ''
+  static: ''
+  dam_static: ''
+  collections: ''
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  documentation:
+    path: _documentation
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  api:
+    path: _api
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  content_markdown:
+    type: markdown
+    options:
+      allow_resize: true
+      initial_height: 320
+      bold: true
+      bulletedlist: true
+      format: p h4 h5 h6
+      image: true
+      image_size_attributes: true
+      italic: true
+      link: true
+      numberedlist: true
+      styles: /css/editor.css
+      table: true
+    cascade: true
+_select_data:
+  types:
+    - get
+    - put
+    - delete
+    - post
+  languages:
+    bash: Bash
+    c: C
+    css: CSS
+    html: HTML
+    java: Java
+    javascript: JavaScript
+    json: JSON
+    php: PHP
+    python: Python
+    ruby: Ruby
+_structures: {}
+_editables: {}
+data_config: {}
+timezone: Etc/UTC
