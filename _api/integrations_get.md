@@ -2,7 +2,7 @@
 title: /books/:id
 position_number: 1.5
 type: delete
-description: Deletes a book
+description: Lists all your integration’s webhook event subscriptions  
 parameters:
   - name:
     content:
@@ -11,8 +11,8 @@ content_markdown: |-
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        "url": "http://api.myapp.com/books/3",
-        "type": "DELETE",
+        "url": "https://next.textus.com/{your-account-name}/integrations",
+        "type": "GET",
         "data": {
           "token": "YOUR_APP_KEY"
         },
