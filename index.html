@@ -20,12 +20,12 @@ title: API Docs
 					<p class="description">{{ doc.description }}</p>
 				{% endif %}
 
-				{% if doc.request and doc.request[0].name %}
-						<h6>Request</h6>
+				{% if doc.parameters and doc.parameters[0].name %}
+						<h6>Parameters</h6>
 						<dl>
-								{% for request in doc.request %}
-										<dt>{{ path-parameter.name }}</dt>
-										<dd>{{ path-parameter.content }}</dd>
+								{% for parameter in doc.parameters %}
+										<dt>{{ parameter.name }}</dt>
+										<dd>{{ parameter.content }}</dd>
 								{% endfor %}
 						</dl>
 				{% endif %}
