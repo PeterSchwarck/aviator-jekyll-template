@@ -8,9 +8,18 @@ parameters:
     content:
 content_markdown: Lists all your integration’s webhook event subscriptions
 left_code_blocks:
-  - code_block: ''
+  - code_block: |+
+      Path parameters
+      Include the following path parameter in the request: 
+      Path Parameter
+      Type
+      Description
+      your-account-name
+      String
+      Specifies the name of your primary non-messaging account.  
+
     title: Request
-    language: json
+    language: html
 right_code_blocks:
   - code_block: |-
       {
