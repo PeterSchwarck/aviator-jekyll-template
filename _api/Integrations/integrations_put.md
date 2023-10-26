@@ -1,8 +1,8 @@
 ---
 title: Integrations
 position_number: 1.5
-type: get
-description: Get event subscriptions
+type: put
+description: Updates your integration’s webhook event subscriptions
 request:
   -path-parameters:
     - name: '{your-account-name}'
