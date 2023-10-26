@@ -22,6 +22,14 @@ title: API Docs
 
 				{% if doc.parameters and doc.parameters[0].name %}
 						<h6>Request</h6>
+						<h7>Path Parameters</h7>
+						<dl>
+								{% for path-parameter in doc.path-parameters %}
+										<dt>{{ path-parameter.name }}</dt>
+										<dd>{{ path-parameter.content }}</dd>
+								{% endfor %}
+						</dl>
+						<h7>Request Body</h7>
 						<dl>
 								{% for parameter in doc.parameters %}
 										<dt>{{ parameter.name }}</dt>
