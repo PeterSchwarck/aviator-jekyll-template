@@ -1,10 +1,10 @@
 ---
-title: Integrations
+title: /{your-account-name}/integrations 
 position_number: 1.5
 type: get
 description: Get event subscriptions
-path parameters:
-  - name: '{your-account-name}'
+parameters:
+  - path: '{your-account-name}'
     content: 'Specifies the name of your primary non-messaging account.'
 content_markdown: Lists all your integration’s webhook event subscriptions
 left_code_blocks:
