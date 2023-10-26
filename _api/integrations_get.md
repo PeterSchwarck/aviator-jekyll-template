@@ -2,11 +2,11 @@
 title: Integrations
 position_number: 1.5
 type: get
-description: Lists all your integration’s webhook event subscriptions
+description: Get event subscriptions
 parameters:
   - name:
     content:
-content_markdown: Deletes a book in your collection.
+content_markdown: Lists all your integration’s webhook event subscriptions
 left_code_blocks:
   - code_block: ''
     title: Request
