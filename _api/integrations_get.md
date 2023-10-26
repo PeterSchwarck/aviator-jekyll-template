@@ -4,15 +4,11 @@ position_number: 1.5
 type: get
 description: Get event subscriptions
 parameters:
-  - name:
-    content:
+  - name: Path parameter
+    content: '{your-account-name}'
 content_markdown: Lists all your integration’s webhook event subscriptions
 left_code_blocks:
-  - code_block: |-
-      curl https://next.textus.com/{your-account-name}/integrations
-    title: Curl
-    language: bash
-
+  - code_block: curl https://next.textus.com/{your-account-name}/integrations
     title: Path parameters
     language: html
 right_code_blocks:
