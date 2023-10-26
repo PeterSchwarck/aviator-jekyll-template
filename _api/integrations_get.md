@@ -9,22 +9,9 @@ parameters:
 content_markdown: Lists all your integration’s webhook event subscriptions
 left_code_blocks:
   - code_block: |+
-      <table>
-      <thead>
-        <tr>
-          <th>Path Parameter</th>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>your-account-name</td>
-          <td>String</td>
-          <td>Specifies the name of your primary non-messaging account.  </td>
-        </tr>
-      </tbody>
-      </table>  
+  | Path Parameter    | Type   | Description                                                 |
+  |-------------------|--------|-------------------------------------------------------------|
+  | your-account-name | String | Specifies the name of your primary non-messaging account.   |
 
     title: Path parameters
     language: html
@@ -35,7 +22,7 @@ right_code_blocks:
         "@context": "/contexts/hydra:Collection.jsonld",
         "id": "http://www.example.com/my_account/integrations",
         "members": [
-          {
+          {z
             "@type": "Integration",
             "@context": "/contexts/Integration.jsonld",
             "id": "/integrations/0yX2VrJ",
