@@ -1,7 +1,7 @@
 ---
-title: /books/:id
+title: /{your-account-name}/integrations
 position_number: 1.5
-type: delete
+type: get
 description: Lists all your integration’s webhook event subscriptions  
 parameters:
   - name:
